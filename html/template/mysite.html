@@ -1,0 +1,25 @@
+<div class="list" style="padding:44px 0 60px;" id="mysite">
+    <header class="bar bar-nav">
+      <a class="icon  icon-left-nav pull-left "  href="javascript:history.back();"></a>
+      <a class="icon  pull-right isedit" data-isedit="false" href="javascript:;">编辑</a>
+      <h1 class="title">我的收藏</h1>
+    </header>
+      <ul class="table-view table-list" style="border-top:none;" >
+          <% _.each(data,function(app) { %>
+          <li class="table-view-cell" >
+              <a class="navigate-right" href ="<%= app.weburl%>"><%= app.name%> </a>
+              <a href="javascript:;" class="btn btn-negative del hide" data-id="<%=app.id%>">移除</a>
+          </li>
+          <%})%>
+      </ul>
+    <nav class="bar bar-tab">
+      <a class="tab-item " href="index.html">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">首页</span>
+      </a>
+      <a class="tab-item active" href="#mysite">
+        <span class="icon icon-gear"></span>
+        <span class="tab-label">我的收藏</span>
+      </a>
+    </nav>
+</div>

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* 
+* @authors H君(qq:262281610)
+* @date    2014-09-04 14:45:58
+* @version $Id$ 
+*/
+/* line 7, ../base.scss */
+body, div, ul, ol, li, a, img, h1, h2, h3, h4, h5, p, input, table, tr, td, i, b, dl, dt, textarea, select, option, pre {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../base.scss */
+body {
+  font-family: "微软雅黑", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* line 9, ../base.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 10, ../base.scss */
+img, input {
+  border: 0;
+  outline: none;
+}
+
+/* line 11, ../base.scss */
+ul {
+  list-style: none;
+}
+
+/* line 12, ../base.scss */
+a:link {
+  text-decoration: none;
+}
+
+/* line 13, ../base.scss */
+a:visited {
+  text-decoration: none;
+}
+
+/* line 14, ../base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 15, ../base.scss */
+.clear {
+  clear: both;
+}
+
+/* line 16, ../base.scss */
+i {
+  font-style: normal;
+}
+
+/* line 17, ../base.scss */
+.hide {
+  display: none;
+}

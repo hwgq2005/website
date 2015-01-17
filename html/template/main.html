@@ -1,0 +1,39 @@
+<div class="list index-site" style="padding:44px 0 60px;" >
+    <header class="bar bar-nav">
+    
+      <a class="icon  pull-right isedit" data-isedit="false" href="javascript:;">添加</a>
+      <h1 class="title">网址导航</h1>
+    </header>
+
+
+      <ul class="table-view table-list" style="border-top:none;" >
+          <% _.each(data.data.site_hot,function(app) { %>
+          <li class="table-view-cell" >
+              <a class="navigate-right" href ="<%= app.weburl%>"><%= app.name%> </a>
+              <a href="javascript:;" class="btn btn-negative add hide" data-isadd="false" data-site="{'id':'<%= app.id%>','name':'<%= app.name%>','weburl':'<%= app.weburl%>'}">添加</a>
+          </li>
+          <%})%>
+          <% _.each(data.data.site_often,function(app) { %>
+          <li class="table-view-cell">
+              <a class="navigate-right" href ="<%= app.weburl%>"><%= app.name%> </a>
+              <a href="javascript:;" class="btn btn-negative add hide" data-isadd="false" data-site="{'id':'<%= app.id%>','name':'<%= app.name%>','weburl':'<%= app.weburl%>'}">添加</a>
+          </li>
+          <%})%>
+          <% _.each(data.data.site_tool,function(app) { %>
+          <li class="table-view-cell" >
+              <a class="navigate-right" href ="<%= app.weburl%>"><%= app.name%> </a>
+              <a href="javascript:;" class="btn btn-negative add hide" data-isadd="false" data-site="{'id':'<%= app.id%>','name':'<%= app.name%>','weburl':'<%= app.weburl%>'}">添加</a>
+          </li>
+          <%})%>
+      </ul>
+    <nav class="bar bar-tab">
+      <a class="tab-item active" href="index.html">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">首页</span>
+      </a>
+      <a class="tab-item" href="#mysite">
+        <span class="icon icon-gear"></span>
+        <span class="tab-label">我的收藏</span>
+      </a>
+    </nav>
+</div>
